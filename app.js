@@ -76,13 +76,13 @@ if(process.env.NODE_ENV === 'production') {
 
 if(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'production') { 
     
-    const whiteList = ['http://127.0.0.1:3000', 'http://localhost:3000', 'http://127.0.0.1:8000', 'http://localhost:8000'];
+    const whiteList = ['https://myfav-videos.onrender.com', 'http://127.0.0.1:3000', 'http://localhost:3000', 'http://127.0.0.1:8000', 'http://localhost:8000'];
 
     const corsOptions = {
       credentials: true,
       origin: (origin, callback) => {
         
-        // console.log("originSS", origin);
+        console.log("originSS", origin);
         
         if (whiteList.indexOf(origin) !== -1 || !origin) {
           callback (null, true);
