@@ -76,9 +76,7 @@ if(process.env.NODE_ENV === 'production') {
 
 if(process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'production') { 
     
-    // const whiteList = ['http://127.0.0.1:3000', 'http://localhost:3000', 'http://127.0.0.1:8000', 'http://localhost:8000'];
-
-    whiteList = ['https://myfav-videos-api.onrender.com'];
+    const whiteList = ['http://127.0.0.1:3000', 'http://localhost:3000', 'http://127.0.0.1:8000', 'http://localhost:8000'];
 
     const corsOptions = {
       credentials: true,
