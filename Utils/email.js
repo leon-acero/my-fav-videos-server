@@ -136,7 +136,7 @@ module.exports = class Email {
 	// método: sendPasswordReset
 
   	async sendPasswordReset () {
-		if (await this.send('passwordReset', 'Tu solicitud para cambiar de password de El Juanjo | Dulcería (solo válido por 10 minutos)'))
+		if (await this.send('passwordReset', 'Tu solicitud para cambiar de password de My Fav Videos (solo válido por 10 minutos)'))
 			return true;
 
 		return false;

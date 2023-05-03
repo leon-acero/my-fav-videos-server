@@ -74,6 +74,13 @@ router
 				// authController.restrictTo ('admin'),
 				greatVideoController.getVideosByTags); 
 
+router
+	.route('/getYoutubeVideosFromPlaylist')
+		.post( 
+				// authController.protect, 
+				// authController.restrictTo ('admin'),
+				greatVideoController.getYoutubeVideosFromPlaylist); 
+
 // ahora exporto el router para impotarlo en app.js
 // cuando solo tengo una cosa que exportar hago asi
 module.exports = router;

@@ -162,7 +162,7 @@ app.use(
 
 // MIDDLEWARE: LIMIT REQUESTS FROM SAME /API
 const limiter = rateLimit ( { 
-	max: 401,
+	max: 501,
 	windowMs: 60 * 60 * 1000,
 	message: 'Too many requests from this IP, please try again in an hour'
 });
